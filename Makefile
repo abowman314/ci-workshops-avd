@@ -18,7 +18,7 @@ build-site-1: ## Build Configs
 deploy-site-1: ## Deploy Configs via eAPI
 	ansible-playbook playbooks/deploy.yml -i sites/site_1/inventory.yml -e "target_hosts=SITE1_FABRIC"
 
-.PHONY: cvp-site-1
+.PHONY: cvp-site-1 
 cvp-site-1: ## Deploy Configs via eAPI
 	ansible-playbook playbooks/cvp1.yml -i sites/site_1/inventory.yml
 
